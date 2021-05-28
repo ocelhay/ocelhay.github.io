@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>antimicrobial - Tag - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/tags/antimicrobial/</link>
+        <description>antimicrobial - Tag - Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 05 Nov 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/tags/antimicrobial/" rel="self" type="application/rss+xml" /><item>
+    <title>Drug Resistance Selection App</title>
+    <link>https://olivier.celhay.net/posts/drug-resistance-selection/</link>
+    <pubDate>Tue, 05 Nov 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/drug-resistance-selection/</guid>
+    <description><![CDATA[The dangers of superbugs Drug resistance happens when microorganisms (such as bacteria, viruses, and parasites) change in some way that reduces or eliminates the effectiveness of antimicrobial drugs (such as antibiotics, antivirals, and antimalarials). As a result of drug resistance, infections persist in the body, causing more harm and increasing the risk of spreading to others.
+Resistance can appear through random mutations that occur in the DNA of microorganisms’ cells during replication.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,12 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>chess - Tag - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/tags/chess/</link>
+        <description>chess - Tag - Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 May 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/tags/chess/" rel="self" type="application/rss+xml" /><item>
+    <title>Scrap Chess Games with R</title>
+    <link>https://olivier.celhay.net/posts/chess-games-r/</link>
+    <pubDate>Tue, 25 May 2021 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/chess-games-r/</guid>
+    <description><![CDATA[Wanting to stay abreast of recent developments in chess openings theory, I was looking for a database of the most recent high-level chess games. ChessBase GmbH offers the &lsquo;Mega Database 2021&rsquo; but the price point is too high for me. The Week in Chess is a free weekly publication in two parts, a text and a games section with a round of the most important chess of the previous week. An archive of all editions is made available by the TWIC curator, Mark Crowthe.]]></description>
+</item></channel>
+</rss>

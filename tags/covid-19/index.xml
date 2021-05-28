@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>covid-19 - Tag - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/tags/covid-19/</link>
+        <description>covid-19 - Tag - Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/tags/covid-19/" rel="self" type="application/rss+xml" /><item>
+    <title>An App for a COVID-19 Model</title>
+    <link>https://olivier.celhay.net/posts/como-app/</link>
+    <pubDate>Tue, 14 Apr 2020 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/como-app/</guid>
+    <description><![CDATA[The Covid-19 International Modelling Consortium (CoMo Consortium) is formulating a mathematical modelling response to help guide policymaking responses to the Covid-19 pandemic.
+Screenshot of CoMo COVID-19 App  As a member of the CoMo Consortium, I have developed an interactive web application to provide easy access to a mathematical model of COVID-19 transmission. The interface contains all the features and functionalities needed to perform a model fit to the available data and investigate the potential impact of several non-pharmaceutical interventions.]]></description>
+</item></channel>
+</rss>

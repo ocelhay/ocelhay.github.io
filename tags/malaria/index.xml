@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>malaria - Tag - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/tags/malaria/</link>
+        <description>malaria - Tag - Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/tags/malaria/" rel="self" type="application/rss+xml" /><item>
+    <title>Costing Tool for Malaria Interventions</title>
+    <link>https://olivier.celhay.net/posts/costing-tool-malaria/</link>
+    <pubDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/costing-tool-malaria/</guid>
+    <description><![CDATA[In the Greater Mekong Sub-region, progresses towards eliminating P. falciparum malaria must be accelerated to address the global health emergency of anti-malarial drug resistance.
+Many researchers and practitoners believe that treating only patients suspected of malaria is insufficient to eliminate the disease as there are a large number of patients that are infected but show no symptoms. They constitutes a reservoir for the disease and achieving malaria eliminaton will be impossible if these asymptomatic cases go untreteated.]]></description>
+</item><item>
+    <title>Malaria Elimination in Asia-Pacific</title>
+    <link>https://olivier.celhay.net/posts/metcap/</link>
+    <pubDate>Wed, 04 Sep 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/metcap/</guid>
+    <description><![CDATA[Malaria is a mosquito-borne infectious disease that is widespread in tropical and subtropical regions. In 2017, there were an estimated 219 million cases of malaria worldwide resulting in an estimated 435,000 deaths (World Malaria Report 2018).
+Approximately 90% of both cases and deaths occurred in Africa but, as the global threat of drug-resistant malaria spreads in Asia, the Asia-Pacific region is strategic and has been targeted for elimination by the year 2030.]]></description>
+</item></channel>
+</rss>
