@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>antimicrobial resistance - Tag - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/tags/antimicrobial-resistance/</link>
+        <description>antimicrobial resistance - Tag - Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/tags/antimicrobial-resistance/" rel="self" type="application/rss+xml" /><item>
+    <title>Internationalisation of a Complex R Shiny App</title>
+    <link>https://olivier.celhay.net/posts/translate-large-shiny-app/</link>
+    <pubDate>Thu, 17 Feb 2022 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/translate-large-shiny-app/</guid>
+    <description><![CDATA[I am developing a complex R shiny app that is being progressively rolled out at 15 hospitals across 9 Asian and African countries. The app offers data management and visualisation of critical antimicrobial resistance data in various settings and should be available in five different languages.
+Fortunately, the R package shiny.i18n provides tools for the internationalisation of shiny applications. In a nutshell, the package requires that you place elements (i.e. strings) to translate in the i18$t function in your app.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Scrap Chess Games with R - Olivier&#39;s Blog</title><meta name="description" content="Olivier&#39;s Personal Blog"><meta property="og:title" content="Scrap Chess Games with R" />
+<meta property="og:description" content="Wanting to stay abreast of recent developments in chess openings theory, I was looking for a database of the most recent high-level chess games. ChessBase GmbH offers the &lsquo;Mega Database 2021&rsquo; but the price point is too high for me. The Week in Chess is a free weekly publication in two parts, a text and a games section with a round of the most important chess of the previous week. An archive of all editions is made available by the TWIC curator, Mark Crowthe." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://olivier.celhay.net/posts/chess-games-r/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-25T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-25T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scrap Chess Games with R"/>
+<meta name="twitter:description" content="Wanting to stay abreast of recent developments in chess openings theory, I was looking for a database of the most recent high-level chess games. ChessBase GmbH offers the &lsquo;Mega Database 2021&rsquo; but the price point is too high for me. The Week in Chess is a free weekly publication in two parts, a text and a games section with a round of the most important chess of the previous week. An archive of all editions is made available by the TWIC curator, Mark Crowthe."/>
+<meta name="application-name" content="Olivier&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="Olivier&#39;s Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://olivier.celhay.net/posts/chess-games-r/" /><link rel="prev" href="https://olivier.celhay.net/posts/como-app/" /><link rel="next" href="https://olivier.celhay.net/posts/translate-large-shiny-app/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Scrap Chess Games with R",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/olivier.celhay.net\/posts\/chess-games-r\/"
+        },"genre": "posts","keywords": "R, chess, web scraping","wordcount":  300 ,
+        "url": "https:\/\/olivier.celhay.net\/posts\/chess-games-r\/","datePublished": "2021-05-25T00:00:00+00:00","dateModified": "2021-05-25T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Olivier"},"author": {
+                "@type": "Person",
+                "name": "Olivier"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Olivier&#39;s Blog">Olivier&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/contact/"> Contact </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Olivier&#39;s Blog">Olivier&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/contact/" title="">Contact</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Scrap Chess Games with R</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Olivier</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;300 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="content" id="content"><p>Wanting to stay abreast of recent developments in chess openings theory, I was looking for a database of the most recent high-level chess games. ChessBase GmbH offers the &lsquo;Mega Database 2021&rsquo; but the price point is too high for me. <a href="https://theweekinchess.com" target="_blank" rel="noopener noreferrer">The Week in Chess</a> is a free weekly publication in two parts, a text and a games section with a round of the most important chess of the previous week. An archive of all editions is <a href="https://theweekinchess.com/twic" target="_blank" rel="noopener noreferrer">made available</a> by the TWIC curator, Mark Crowthe.</p>
+<p>Downloading, unzipping and combining the 400+ files (going back to 2012) by hand would take a long time. Fortunately R can automate the downloading while unzipping and merging can be done with a few command lines instructions.</p>
+<figure><img src = "/images/carlsen-firouzja.jpg" alt = "Norway Chess 2020" width="80%"><figcaption><small>Norway Chess 2020 -  Firouzja vs. Carlsen</small></figcaption></figure>
+<p>The R code below lists all zipped files that can be found in the archive page before downloading them using the <code>rverst</code> package.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rvest</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">stringr</span><span class="p">)</span>
+
+<span class="n">pgn_list</span> <span class="o">&lt;-</span> <span class="nf">read_html</span><span class="p">(</span><span class="s">&#34;https://theweekinchess.com/twic&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">html_nodes</span><span class="p">(</span><span class="s">&#34;a&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>  <span class="c1"># find all links in the page</span>
+  <span class="nf">html_attr</span><span class="p">(</span><span class="s">&#34;href&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="c1"># get the url of those links</span>
+  <span class="nf">str_subset</span><span class="p">(</span><span class="s">&#34;\\g.zip&#34;</span><span class="p">)</span>  <span class="c1"># remove links that are not pgn</span>
+
+<span class="c1"># download all files in working directory</span>
+<span class="nf">walk2</span><span class="p">(</span><span class="n">pgn_list</span><span class="p">,</span> 
+      <span class="nf">basename</span><span class="p">(</span><span class="n">pgn_list</span><span class="p">),</span> 
+      <span class="n">download.file</span><span class="p">,</span> 
+      <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;wb&#34;</span><span class="p">)</span>
+</code></pre></div><p>With macOS&rsquo;s Terminal, these commands will unzip all files before merging them into a unique file.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># replace &#34;/Users/olivier/Documents/Vrac/Echecs&#34; </span>
+<span class="c1"># with your working directory</span>
+<span class="nb">cd</span> /Users/olivier/Documents/Vrac/Echecs
+find ./ -name <span class="se">\*</span>.zip -exec unzip <span class="o">{}</span> <span class="se">\;</span> 
+rm -f *.zip
+cat *.pgn &gt; twic_merged.pgn
+</code></pre></div><p>The resulting file, which combines all games, can be opened with any chess software (I use HIARCs Chess Explorer). Please note that the final file is a hefty size ranging from 1 to 2 Gb and might be too large to handle on your laptop. You can always remove some of the older files/games before performing the final merge. Enjoy the games!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-05-25</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/r/">R</a>,&nbsp;<a href="/tags/chess/">chess</a>,&nbsp;<a href="/tags/web-scraping/">web scraping</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/como-app/" class="prev" rel="prev" title="An App for a COVID-19 Model"><i class="fas fa-angle-left fa-fw"></i>An App for a COVID-19 Model</a>
+            <a href="/posts/translate-large-shiny-app/" class="next" rel="next" title="Internationalisation of a Complex R Shiny App">Internationalisation of a Complex R Shiny App<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Olivier Celhay's Personal Blog</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>All Posts - Olivier&#39;s Blog</title>
+        <link>https://olivier.celhay.net/posts/</link>
+        <description>All Posts | Olivier&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://olivier.celhay.net/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Internationalisation of a Complex R Shiny App</title>
+    <link>https://olivier.celhay.net/posts/translate-large-shiny-app/</link>
+    <pubDate>Thu, 17 Feb 2022 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/translate-large-shiny-app/</guid>
+    <description><![CDATA[I am developing a complex R shiny app that is being progressively rolled out at 15 hospitals across 9 Asian and African countries. The app offers data management and visualisation of critical antimicrobial resistance data in various settings and should be available in five different languages.
+Fortunately, the R package shiny.i18n provides tools for the internationalisation of shiny applications. In a nutshell, the package requires that you place elements (i.e. strings) to translate in the i18$t function in your app.]]></description>
+</item><item>
+    <title>Scrap Chess Games with R</title>
+    <link>https://olivier.celhay.net/posts/chess-games-r/</link>
+    <pubDate>Tue, 25 May 2021 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/chess-games-r/</guid>
+    <description><![CDATA[Wanting to stay abreast of recent developments in chess openings theory, I was looking for a database of the most recent high-level chess games. ChessBase GmbH offers the &lsquo;Mega Database 2021&rsquo; but the price point is too high for me. The Week in Chess is a free weekly publication in two parts, a text and a games section with a round of the most important chess of the previous week. An archive of all editions is made available by the TWIC curator, Mark Crowthe.]]></description>
+</item><item>
+    <title>An App for a COVID-19 Model</title>
+    <link>https://olivier.celhay.net/posts/como-app/</link>
+    <pubDate>Tue, 14 Apr 2020 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/como-app/</guid>
+    <description><![CDATA[The Covid-19 International Modelling Consortium (CoMo Consortium) is formulating a mathematical modelling response to help guide policymaking responses to the Covid-19 pandemic.
+Screenshot of CoMo COVID-19 App  As a member of the CoMo Consortium, I have developed an interactive web application to provide easy access to a mathematical model of COVID-19 transmission. The interface contains all the features and functionalities needed to perform a model fit to the available data and investigate the potential impact of several non-pharmaceutical interventions.]]></description>
+</item><item>
+    <title>Drug Resistance Selection App</title>
+    <link>https://olivier.celhay.net/posts/drug-resistance-selection/</link>
+    <pubDate>Tue, 05 Nov 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/drug-resistance-selection/</guid>
+    <description><![CDATA[The dangers of superbugs Drug resistance happens when microorganisms (such as bacteria, viruses, and parasites) change in some way that reduces or eliminates the effectiveness of antimicrobial drugs (such as antibiotics, antivirals, and antimalarials). As a result of drug resistance, infections persist in the body, causing more harm and increasing the risk of spreading to others.
+Resistance can appear through random mutations that occur in the DNA of microorganisms’ cells during replication.]]></description>
+</item><item>
+    <title>Prioritizing Testing for Fever Diagnosis</title>
+    <link>https://olivier.celhay.net/posts/prioritizing-testing-fever/</link>
+    <pubDate>Wed, 16 Oct 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/prioritizing-testing-fever/</guid>
+    <description><![CDATA[Staffs conducts a Rapid Diagnostic Test for malaria result in Rizal, Palawan, Philippines. Rapid diagnostic tests (RDTs) are medical diagnostic tests designed to be quick and easy to perform. RDTs are low-cost, simple to operate and read, and in use in a large number of low-resource settings.
+We developed an App based on a simple mathematical model to help medical staff prioritise their use of RDTs.
+Suppose that a feverish patient comes to a medical facility and that the patient has no symptoms to help differentiate from several different diseases (e.]]></description>
+</item><item>
+    <title>Costing Tool for Malaria Interventions</title>
+    <link>https://olivier.celhay.net/posts/costing-tool-malaria/</link>
+    <pubDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/costing-tool-malaria/</guid>
+    <description><![CDATA[In the Greater Mekong Sub-region, progresses towards eliminating P. falciparum malaria must be accelerated to address the global health emergency of anti-malarial drug resistance.
+Many researchers and practitoners believe that treating only patients suspected of malaria is insufficient to eliminate the disease as there are a large number of patients that are infected but show no symptoms. They constitutes a reservoir for the disease and achieving malaria eliminaton will be impossible if these asymptomatic cases go untreteated.]]></description>
+</item><item>
+    <title>Malaria Elimination in Asia-Pacific</title>
+    <link>https://olivier.celhay.net/posts/metcap/</link>
+    <pubDate>Wed, 04 Sep 2019 00:00:00 &#43;0000</pubDate><dc:creator>Olivier</dc:creator><guid>https://olivier.celhay.net/posts/metcap/</guid>
+    <description><![CDATA[Malaria is a mosquito-borne infectious disease that is widespread in tropical and subtropical regions. In 2017, there were an estimated 219 million cases of malaria worldwide resulting in an estimated 435,000 deaths (World Malaria Report 2018).
+Approximately 90% of both cases and deaths occurred in Africa but, as the global threat of drug-resistant malaria spreads in Asia, the Asia-Pacific region is strategic and has been targeted for elimination by the year 2030.]]></description>
+</item></channel>
+</rss>
